@@ -3,7 +3,7 @@ echo requesting admin
 Reg.exe add HKLM /F >nul 2>&1
 if %errorlevel% neq 0 start "" /wait /I /min powershell -NoProfile -Command start -verb runas "'%~s0'" && exit /b
 
-::    Copyright (C) 2022 Kxhu, MP Inc.
+::    Kxhu, MP Inc.
 ::
 ::    This program is free software: you can redistribute it and/or modify
 ::    it under the terms of the GNU Affero General Public License as published
